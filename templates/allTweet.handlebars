@@ -1,0 +1,8 @@
+<div class="tweet" data-tweet-content={{content}} data-tweet-creator={{creator}}>
+	<p>"{{content}}"</p>
+    <p>by {{creator}}</p>
+    {{#if retweeter}}
+		<p>retweeted by {{retweeter}}</p>
+	{{/if}}
+    <a href="#" class="retweet-tweet">Retweet</a>
+</div>

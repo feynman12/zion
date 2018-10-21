@@ -1,0 +1,36 @@
+<div id="register">
+  <a href="#" id="home-link">Back to Home</a>
+  <h1>Register</h1>
+  <div class="error">
+    {{#if error}}
+      {{error}}
+    {{/if}}
+  </div>
+  <form id="register-form">
+    <div>Username: <input type="text" name="username" required /></div>
+    <div>Password: <input type="password" name="password" required /></div>
+    <div>Confirm Password: <input type="password" name="confirm" required /></div>
+    <br />
+    <div>First Name: <input type="text" name="first-name" required /></div>
+    <div>Middle Name: <input type="text" name="middle-name" /></div>
+    <div>Last Name: <input type="text" name="last-name" required /></div>
+    <div>Email: <input type="text" name="email" required /></div>
+    <div>Sex: <input type="text" name="sex" required /></div>
+    <div>Birthday: <input type="text" name="birthday" required /></div>
+    <br />
+    <div>College / school: <input type="text" name="school" /></div>
+    <div>Degree: <input type="text" name="degree" /></div>
+    <div>Major: <input type="text" name="major" /></div>
+    <br />
+    <div>Residence: <input type="text" name="residence" /></div>
+    <div>Hometown: <input type="text" name="hometown" /></div>
+    <br />
+    <div>Work employer: <input type="text" name="work-employer" /></div>
+    <div>Work position: <input type="text" name="work-position" /></div>
+    <div>Work location: <input type="text" name="work-location" /></div>
+    <br />
+    <div>Interested in: <input type="text" name="interested" /></div>
+    <div>Relationship status: <input type="text" name="relationship-status" /></div>
+    <input type="submit" />
+  </form>
+</div>

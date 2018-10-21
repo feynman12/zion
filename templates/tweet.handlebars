@@ -1,0 +1,8 @@
+<div class="tweet" data-tweet-id={{_id}}>
+	<p>"{{content}}"</p>
+	{{#if retweeter}}
+		<p>by {{creator}}</p>
+		<p>retweeted by {{retweeter}}</p>
+	{{/if}}
+    <a href="#" class="delete-tweet">Delete</a>
+</div>

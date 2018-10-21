@@ -1,0 +1,43 @@
+<div id="tweets">
+
+    <p>Welcome, {{currentUser}} (<a href="#" id="logout-link">logout</a>)</p>
+
+    <div>
+        <div class="error"></div>
+        <label for="new-tweet-input">Post a new tweet:</label>
+        <input type="text" id="new-tweet-input" />
+        <button id="submit-new-tweet">Post</button>
+    </div>
+
+    <div>
+        <label for="new-follower-input">Follow a user:</label>
+        <input type="text" id="new-follower-input" />
+        <button id="submit-new-follower">Follow</button>
+    </div>
+
+    <div>
+        <h1>My Tweets</h1>
+
+        {{#each tweets}}
+            {{> tweet}}
+        {{else}}
+            <p><em>No tweets yet!</em></p>
+        {{/each}}
+
+        <h1>Following</h1>
+
+        {{#each followingTweets}}
+            {{> allTweet}}
+        {{else}}
+            <p><em>No tweets yet!</em></p>
+        {{/each}}
+
+        <h1>All Tweets</h1>
+
+        {{#each allTweets}}
+            {{> allTweet}}
+        {{else}}
+            <p><em>No tweets yet!</em></p>
+        {{/each}}
+    </div>
+</div>
